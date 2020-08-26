@@ -48,7 +48,7 @@ self.onfetch = (event) => {
   if (event.request.url.includes('/api/')) {
     event.respondWith(
       caches
-        .open(DATA_CACHE_NAME)
+        .open(DATA_CACHE)
         .then((cache) => {
           return fetch(event.request)
             .then((response) => {
