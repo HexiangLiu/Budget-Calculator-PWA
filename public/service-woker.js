@@ -14,6 +14,7 @@ const static_file = [
 ];
 
 const static_cache = 'static_cache';
+const DATA_CACHE = 'data_cache';
 
 self.oninstall = (event) => {
   event.waitUntil(
